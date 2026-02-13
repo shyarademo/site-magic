@@ -3,6 +3,22 @@ import { Users, Wind, Package, Phone } from "lucide-react";
 import { type SiteData } from "@/data/siteDataSchema";
 import { Button } from "@/components/ui/button";
 
+import fleetSwiftDzire from "@/assets/fleet-swift-dzire.jpg";
+import fleetInnovaCrysta from "@/assets/fleet-innova-crysta.jpg";
+import fleetErtiga from "@/assets/fleet-ertiga.jpg";
+import fleetScorpio from "@/assets/fleet-scorpio.jpg";
+import fleetSkodaSlavia from "@/assets/fleet-skoda-slavia.jpg";
+import fleetHyundaiVerna from "@/assets/fleet-hyundai-verna.jpg";
+
+const vehicleImageMap: Record<string, string> = {
+  "Swift Dezire": fleetSwiftDzire,
+  "Innova Crysta": fleetInnovaCrysta,
+  "Ertiga/Rumion": fleetErtiga,
+  "Scorpio": fleetScorpio,
+  "Skoda Slavia": fleetSkodaSlavia,
+  "Hyundai Verna": fleetHyundaiVerna,
+};
+
 interface Props {
   data: SiteData;
 }
@@ -39,7 +55,7 @@ const FleetSection = ({ data }: Props) => {
               className="group overflow-hidden rounded-2xl border bg-card shadow-sm transition-all hover:shadow-xl"
             >
               <div className="relative h-48 overflow-hidden">
-                <img src={vehicle.image} alt={vehicle.name} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+                <img src={vehicleImageMap[vehicle.name] || vehicle.image} alt={vehicle.name} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
                 <div className="absolute top-3 right-3 rounded-full bg-primary px-3 py-1 text-xs font-bold text-primary-foreground font-sans">
                   {vehicle.seats}
                 </div>
