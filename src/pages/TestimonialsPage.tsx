@@ -1,15 +1,14 @@
+import { useEffect } from "react";
 import { useSiteData } from "@/data/useSiteData";
 import ValidationErrorOverlay from "@/components/ValidationErrorOverlay";
 import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
-import ServicesSection from "@/components/ServicesSection";
-import WhyChooseUs from "@/components/WhyChooseUs";
-import StatsSection from "@/components/StatsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 
-const Index = () => {
+const TestimonialsPage = () => {
   const siteData = useSiteData();
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
   if (siteData.valid === false) {
     return <ValidationErrorOverlay errors={siteData.errors} />;
@@ -20,16 +19,13 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header data={data} />
-      <main>
-        <HeroSection data={data} />
-        <ServicesSection data={data} />
-        <WhyChooseUs data={data} />
-        <StatsSection data={data} />
-      </main>
+      <div className="pt-20">
+        <TestimonialsSection data={data} />
+      </div>
       <Footer data={data} />
       <FloatingButtons data={data} />
     </div>
   );
 };
 
-export default Index;
+export default TestimonialsPage;

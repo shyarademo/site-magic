@@ -1,108 +1,144 @@
 import { z } from "zod";
 
 const navigationItemSchema = z.object({
-  label: z.string().min(1, "Navigation label is required"),
-  href: z.string().min(1, "Navigation href is required"),
+  label: z.string().min(1),
+  href: z.string().min(1),
 });
 
-const serviceSchema = z.object({
-  icon: z.string().min(1, "Service icon name is required"),
-  title: z.string().min(1, "Service title is required"),
-  description: z.string().min(1, "Service description is required"),
+const serviceCardSchema = z.object({
+  icon: z.string().min(1),
+  title: z.string().min(1),
+  description: z.string().min(1),
 });
 
-const fleetItemSchema = z.object({
-  name: z.string().min(1, "Vehicle name is required"),
-  image: z.string().url("Vehicle image must be a valid URL"),
-  seats: z.string().min(1, "Seating capacity is required"),
+const fleetVehicleSchema = z.object({
+  name: z.string().min(1),
+  image: z.string().url(),
+  seats: z.string().min(1),
   ac: z.boolean(),
   carrier: z.boolean(),
   tollIncluded: z.boolean(),
-  driverAllowance: z.string().min(1, "Driver allowance info is required"),
-  description: z.string().min(1, "Vehicle description is required"),
+  driverAllowance: z.string().min(1),
+  description: z.string().min(1),
 });
 
-const pricingTableSchema = z.object({
-  title: z.string().min(1, "Pricing table title is required"),
-  headers: z.array(z.string()).min(2, "At least 2 column headers required"),
-  rows: z.array(z.array(z.string()).min(2)).min(1, "At least 1 row required"),
+const localRateSchema = z.object({
+  "4hr40km": z.string(),
+  "8hr60km": z.string(),
+  "10hr80km": z.string(),
+  meterCharge: z.string(),
+  extraHrCharge: z.string(),
 });
 
-const whyChooseUsItemSchema = z.object({
-  icon: z.string().min(1, "Icon name is required"),
-  title: z.string().min(1, "Title is required"),
-  description: z.string().min(1, "Description is required"),
+const outstationRateSchema = z.object({
+  extraMeter: z.string(),
+  minChargesDay: z.string(),
+  driverNightHalt: z.string(),
+});
+
+const vehicleRateSchema = z.object({
+  vehicle: z.string().min(1),
+  local: localRateSchema,
+  outstation: outstationRateSchema,
+});
+
+const whyChooseCardSchema = z.object({
+  icon: z.string().min(1),
+  title: z.string().min(1),
+  description: z.string().min(1),
 });
 
 const statSchema = z.object({
-  value: z.number().min(0, "Stat value must be non-negative"),
+  value: z.number().min(0),
   suffix: z.string().optional().default("+"),
-  label: z.string().min(1, "Stat label is required"),
+  label: z.string().min(1),
 });
 
 const testimonialSchema = z.object({
-  name: z.string().min(1, "Reviewer name is required"),
-  location: z.string().min(1, "Reviewer location is required"),
+  name: z.string().min(1),
+  location: z.string().min(1),
   rating: z.number().min(1).max(5),
-  quote: z.string().min(1, "Review text is required"),
+  title: z.string().min(1),
+  quote: z.string().min(1),
 });
 
 const legalSectionSchema = z.object({
-  title: z.string().min(1, "Section title is required"),
-  content: z.string().min(1, "Section content is required"),
+  title: z.string().min(1),
+  content: z.string().min(1),
 });
 
 export const siteDataSchema = z.object({
   branding: z.object({
-    companyName: z.string().min(1, "Company name is required"),
-    tagline: z.string().min(1, "Tagline is required"),
-    logoText: z.string().min(1, "Logo text is required"),
-    phones: z.array(z.string()).min(1, "At least one phone number is required"),
-    whatsappNumber: z.string().min(1, "WhatsApp number is required"),
-    email: z.string().email("Must be a valid email address"),
-    address: z.string().min(1, "Address is required"),
+    companyName: z.string().min(1),
+    tagline: z.string().min(1),
+    logoText: z.string().min(1),
+    phones: z.array(z.string()).min(1),
+    whatsappNumber: z.string().min(1),
+    email: z.string().email(),
+    address: z.string().min(1),
   }),
   colors: z.object({
-    primary: z.string().min(1, "Primary color (HSL) is required"),
-    primaryForeground: z.string().min(1, "Primary foreground color is required"),
-    secondary: z.string().min(1, "Secondary color is required"),
-    secondaryForeground: z.string().min(1, "Secondary foreground color is required"),
-    accent: z.string().min(1, "Accent color is required"),
-    accentForeground: z.string().min(1, "Accent foreground color is required"),
+    primary: z.string().min(1),
+    primaryForeground: z.string().min(1),
+    secondary: z.string().min(1),
+    secondaryForeground: z.string().min(1),
+    accent: z.string().min(1),
+    accentForeground: z.string().min(1),
   }),
-  navigation: z.array(navigationItemSchema).min(1, "At least one nav item required"),
+  navigation: z.array(navigationItemSchema).min(1),
   hero: z.object({
-    headline: z.string().min(1, "Hero headline is required"),
-    subheadline: z.string().min(1, "Hero subheadline is required"),
-    description: z.string().min(1, "Hero description is required"),
-    ctaText: z.string().min(1, "CTA button text is required"),
-    ctaLink: z.string().url("CTA link must be a valid URL"),
-    images: z.array(z.string().url()).min(1, "At least one hero image URL required"),
+    headline: z.string().min(1),
+    subheadline: z.string().min(1),
+    description: z.string().min(1),
+    ctaText: z.string().min(1),
+    ctaLink: z.string().url(),
+    secondaryCtaText: z.string().optional(),
+    images: z.array(z.string().url()).min(1),
   }),
-  services: z.array(serviceSchema).min(1, "At least one service is required"),
-  fleet: z.array(fleetItemSchema).min(1, "At least one vehicle is required"),
+  services: z.object({
+    heading: z.string().min(1),
+    subheading: z.string().min(1),
+    cards: z.array(serviceCardSchema).min(1),
+  }),
+  fleet: z.object({
+    heading: z.string().min(1),
+    subheading: z.string().min(1),
+    vehicles: z.array(fleetVehicleSchema).min(1),
+  }),
   pricing: z.object({
-    local: pricingTableSchema,
-    outstation: pricingTableSchema,
-    routes: pricingTableSchema,
+    heading: z.string().min(1),
+    subheading: z.string().min(1),
+    vehicleRates: z.array(vehicleRateSchema).min(1),
+    routeFares: z.object({
+      title: z.string().min(1),
+      headers: z.array(z.string()).min(2),
+      rows: z.array(z.array(z.string()).min(2)).min(1),
+    }),
   }),
-  whyChooseUs: z.array(whyChooseUsItemSchema).min(1),
-  stats: z.array(statSchema).min(1, "At least one stat is required"),
-  testimonials: z.array(testimonialSchema).min(1, "At least one testimonial is required"),
+  whyChooseUs: z.object({
+    heading: z.string().min(1),
+    subheading: z.string().min(1),
+    cards: z.array(whyChooseCardSchema).min(1),
+  }),
+  stats: z.array(statSchema).min(1),
+  testimonials: z.object({
+    heading: z.string().min(1),
+    subheading: z.string().min(1),
+    reviewsHeading: z.string().min(1),
+    reviews: z.array(testimonialSchema).min(1),
+  }),
   contact: z.object({
-    address: z.string().min(1, "Contact address is required"),
-    phones: z.array(z.string()).min(1, "At least one phone number required"),
-    email: z.string().email("Must be a valid email"),
-    whatsappLink: z.string().url("WhatsApp link must be a valid URL"),
-    mapLink: z.string().url("Map link must be a valid URL"),
+    address: z.string().min(1),
+    phones: z.array(z.string()).min(1),
+    email: z.string().email(),
+    whatsappLink: z.string().url(),
+    mapLink: z.string().url(),
+    description: z.string().min(1),
   }),
   footer: z.object({
-    copyright: z.string().min(1, "Copyright text is required"),
-    tagline: z.string().min(1, "Footer tagline is required"),
-    links: z.array(z.object({
-      label: z.string().min(1),
-      href: z.string().min(1),
-    })).min(1),
+    copyright: z.string().min(1),
+    tagline: z.string().min(1),
+    links: z.array(z.object({ label: z.string().min(1), href: z.string().min(1) })).min(1),
   }),
   termsAndConditions: z.object({
     title: z.string().min(1),
@@ -117,18 +153,3 @@ export const siteDataSchema = z.object({
 });
 
 export type SiteData = z.infer<typeof siteDataSchema>;
-
-export type ValidationSuccess = { success: true; data: SiteData };
-export type ValidationFailure = { success: false; errors: string[] };
-export type ValidationResult = ValidationSuccess | ValidationFailure;
-
-export function validateSiteData(data: unknown): ValidationResult {
-  const result = siteDataSchema.safeParse(data);
-  if (result.success) {
-    return { success: true as const, data: result.data };
-  }
-  const errors = result.error.issues.map(
-    (issue) => `${issue.path.join(" → ")}: ${issue.message}`
-  );
-  return { success: false as const, errors };
-}
