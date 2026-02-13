@@ -97,7 +97,7 @@ const HeroSection = ({ data }: Props) => {
               </Button>
             </a>
             <a href={`tel:${branding.phones[0]}`}>
-              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 text-base font-sans px-8">
+              <Button size="lg" variant="outline" className="border-white/60 text-white hover:bg-white/20 text-base font-sans px-8">
                 {hero.secondaryCtaText || `Call ${branding.phones[0]}`}
               </Button>
             </a>

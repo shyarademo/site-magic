@@ -12,6 +12,8 @@ const Header = ({ data }: Props) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
+  const isHomePage = location.pathname === "/";
+  const useLightText = isHomePage && !isScrolled;
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 20);
@@ -34,7 +36,9 @@ const Header = ({ data }: Props) => {
           <div className="flex h-10 w-10 items-center justify-center rounded-full gold-gradient">
             <span className="text-lg font-bold text-white font-serif">R</span>
           </div>
-          <span className="text-lg font-bold text-secondary font-sans">
+          <span className={`text-lg font-bold font-sans transition-colors ${
+            useLightText ? "text-white" : "text-secondary"
+          }`}>
             {data.branding.companyName}
           </span>
         </Link>
@@ -44,8 +48,12 @@ const Header = ({ data }: Props) => {
             <Link
               key={item.label}
               to={item.href}
-              className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-primary font-sans ${
-                location.pathname === item.href ? "text-primary" : "text-foreground/80"
+              className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors font-sans ${
+                location.pathname === item.href
+                  ? "text-primary"
+                  : useLightText
+                    ? "text-white/90 hover:bg-white/10 hover:text-white"
+                    : "text-foreground/80 hover:bg-accent hover:text-primary"
               }`}
             >
               {item.label}
@@ -61,7 +69,9 @@ const Header = ({ data }: Props) => {
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="rounded-lg p-2 text-foreground lg:hidden hover:bg-accent"
+          className={`rounded-lg p-2 lg:hidden transition-colors ${
+            useLightText ? "text-white hover:bg-white/10" : "text-foreground hover:bg-accent"
+          }`}
         >
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
