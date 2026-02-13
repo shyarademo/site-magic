@@ -33,9 +33,9 @@
     "ctaLink": "https://wa.me/918603851659?text=Hi%2C%20I%20want%20to%20book%20a%20taxi",
     "secondaryCtaText": "CALL: 086038 51659",
     "images": [
-      "https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=1200&q=80",
-      "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1200&q=80",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=80"
+      "https://picsum.photos/id/111/1200/800",
+      "https://picsum.photos/id/133/1200/800",
+      "https://picsum.photos/id/183/1200/800"
     ]
   },
   "services": {
@@ -65,7 +65,7 @@
     "vehicles": [
       {
         "name": "Swift Dezire",
-        "image": "https://images.unsplash.com/photo-1623869675781-80aa31012c5a?w=600&q=80",
+        "image": "https://picsum.photos/id/514/600/400",
         "seats": "4 + 1 Driver",
         "ac": true,
         "carrier": false,
@@ -75,7 +75,7 @@
       },
       {
         "name": "Innova Crysta",
-        "image": "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=600&q=80",
+        "image": "https://picsum.photos/id/519/600/400",
         "seats": "6 + 1 Driver",
         "ac": true,
         "carrier": true,
@@ -85,7 +85,7 @@
       },
       {
         "name": "Ertiga/Rumion",
-        "image": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&q=80",
+        "image": "https://picsum.photos/id/520/600/400",
         "seats": "6 + 1 Driver",
         "ac": true,
         "carrier": true,
@@ -95,7 +95,7 @@
       },
       {
         "name": "Scorpio",
-        "image": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&q=80",
+        "image": "https://picsum.photos/id/526/600/400",
         "seats": "6 + 1 Driver",
         "ac": true,
         "carrier": true,
@@ -105,7 +105,7 @@
       },
       {
         "name": "Skoda Slavia",
-        "image": "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?w=600&q=80",
+        "image": "https://picsum.photos/id/532/600/400",
         "seats": "4 + 1 Driver",
         "ac": true,
         "carrier": false,
@@ -115,7 +115,7 @@
       },
       {
         "name": "Hyundai Verna",
-        "image": "https://images.unsplash.com/photo-1606611013016-969c19ba27a5?w=600&q=80",
+        "image": "https://picsum.photos/id/537/600/400",
         "seats": "4 + 1 Driver",
         "ac": true,
         "carrier": false,
