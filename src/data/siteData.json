@@ -1,12 +1,12 @@
 {
   "branding": {
     "companyName": "Royal Tour & Travels",
-    "tagline": "Your Trusted Travel Partner in Bodhgaya",
+    "tagline": "Best Taxi Service in Bodhgaya",
     "logoText": "Royal Tour & Travels",
-    "phones": ["+91 9661838900", "+91 7544868900"],
-    "whatsappNumber": "919661838900",
+    "phones": ["+91 86038 51659"],
+    "whatsappNumber": "918603851659",
     "email": "royaltourandtravels.bodhgaya@gmail.com",
-    "address": "Near Mahabodhi Temple, Bodhgaya, Gaya, Bihar - 824231"
+    "address": "Amwan, Near - Marasa Sarovar Premiere Hotel, Bodhgaya, Gaya Ji (Bihar) 824231"
   },
   "colors": {
     "primary": "38 92% 50%",
@@ -17,287 +17,387 @@
     "accentForeground": "38 92% 30%"
   },
   "navigation": [
-    { "label": "Home", "href": "#hero" },
-    { "label": "Services", "href": "#services" },
-    { "label": "Our Fleet", "href": "#fleet" },
-    { "label": "Pricing", "href": "#pricing" },
-    { "label": "Testimonials", "href": "#testimonials" },
-    { "label": "Contact", "href": "#contact" }
+    { "label": "Home", "href": "/" },
+    { "label": "Our Fleet", "href": "/fleet" },
+    { "label": "Pricing", "href": "/pricing" },
+    { "label": "Testimonials", "href": "/testimonials" },
+    { "label": "Contact", "href": "/contact" },
+    { "label": "Term & Condition", "href": "/terms" },
+    { "label": "Privacy Policy", "href": "/privacy" }
   ],
   "hero": {
     "headline": "Book a Car Taxi - Anytime Anywhere",
-    "subheadline": "Royal Tour & Travels Bodhgaya",
-    "description": "We provide the best taxi service in Bodhgaya with well-maintained cars and experienced drivers. Whether it's a local trip, airport transfer, or an outstation journey — we've got you covered.",
-    "ctaText": "Book a Taxi Now",
-    "ctaLink": "https://wa.me/919661838900?text=Hi%2C%20I%20want%20to%20book%20a%20taxi",
+    "subheadline": "BEST TAXI SERVICE IN BODHGAYA",
+    "description": "Bodhgaya Taxi Service offers reliable, affordable car rentals with flexible options, ensuring comfort and convenience for your every journey.",
+    "ctaText": "BOOK A TAXI",
+    "ctaLink": "https://wa.me/918603851659?text=Hi%2C%20I%20want%20to%20book%20a%20taxi",
+    "secondaryCtaText": "CALL: 086038 51659",
     "images": [
       "https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=1200&q=80",
       "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1200&q=80",
       "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=80"
     ]
   },
-  "services": [
-    {
-      "icon": "MapPin",
-      "title": "Local/Outstation & Round Trip",
-      "description": "Explore Bodhgaya and beyond with our reliable local and outstation taxi services. Round trips available for all major destinations across Bihar and neighboring states."
-    },
-    {
-      "icon": "Plane",
-      "title": "Airport Pick up & Drop",
-      "description": "Hassle-free airport transfers to and from Gaya Airport (GAY). Our drivers track your flight and ensure timely pickup. Comfortable vehicles with luggage space."
-    },
-    {
-      "icon": "Package",
-      "title": "Best Tour Packages",
-      "description": "Customized tour packages covering Bodhgaya, Rajgir, Nalanda, Varanasi, and other Buddhist circuit destinations. Experienced drivers who double as local guides."
-    }
-  ],
-  "fleet": [
-    {
-      "name": "Swift Dezire",
-      "image": "https://images.unsplash.com/photo-1623869675781-80aa31012c5a?w=600&q=80",
-      "seats": "4 + 1 Driver",
-      "ac": true,
-      "carrier": false,
-      "tollIncluded": true,
-      "driverAllowance": "Included",
-      "description": "Perfect for small families and couples. Comfortable sedan with AC for city rides and short trips."
-    },
-    {
-      "name": "Innova Crysta",
-      "image": "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=600&q=80",
-      "seats": "6 + 1 Driver",
-      "ac": true,
-      "carrier": true,
-      "tollIncluded": true,
-      "driverAllowance": "Included",
-      "description": "Spacious premium SUV ideal for families and groups. Extra luggage space with roof carrier available."
-    },
-    {
-      "name": "Ertiga / Rumion",
-      "image": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&q=80",
-      "seats": "6 + 1 Driver",
-      "ac": true,
-      "carrier": false,
-      "tollIncluded": true,
-      "driverAllowance": "Included",
-      "description": "Versatile MPV perfect for medium-sized groups. Comfortable seating with ample legroom."
-    },
-    {
-      "name": "Scorpio",
-      "image": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&q=80",
-      "seats": "6 + 1 Driver",
-      "ac": true,
-      "carrier": true,
-      "tollIncluded": true,
-      "driverAllowance": "Included",
-      "description": "Rugged and powerful SUV for long-distance travel. Ideal for outstation trips and rough terrain."
-    },
-    {
-      "name": "Skoda Slavia",
-      "image": "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?w=600&q=80",
-      "seats": "4 + 1 Driver",
-      "ac": true,
-      "carrier": false,
-      "tollIncluded": true,
-      "driverAllowance": "Included",
-      "description": "Premium sedan with European styling. Smooth ride quality and refined interiors for a luxurious experience."
-    },
-    {
-      "name": "Hyundai Verna",
-      "image": "https://images.unsplash.com/photo-1606611013016-969c19ba27a5?w=600&q=80",
-      "seats": "4 + 1 Driver",
-      "ac": true,
-      "carrier": false,
-      "tollIncluded": true,
-      "driverAllowance": "Included",
-      "description": "Stylish and feature-rich sedan. Great for business trips and premium city travel."
-    }
-  ],
+  "services": {
+    "heading": "Taxi/Cab for Local, Airport Pick up & Best Tour Packages",
+    "subheading": "Book - One Way, Local & Outstation Cabs",
+    "cards": [
+      {
+        "icon": "MapPin",
+        "title": "Outstation & Round Trip",
+        "description": "Get Rajasthan & All India Tour. Call us & Book Your Trip. Customize Sedan, SUV & Tempo Traveller. 24x7 Service Available."
+      },
+      {
+        "icon": "Plane",
+        "title": "Airport Pick up & Drop",
+        "description": "Pick up & Drop. Price Starts from Rs.10/km. Hassle-free airport transfers to and from Gaya Airport."
+      },
+      {
+        "icon": "Package",
+        "title": "Best Tour Packages",
+        "description": "Customize Your Tour. Call Us Now. Customized tour packages covering Bodhgaya, Rajgir, Nalanda, Varanasi and other destinations."
+      }
+    ]
+  },
+  "fleet": {
+    "heading": "Our Cabs",
+    "subheading": "Ride in Comfort and Style with Our Premium Fleet of Cabs",
+    "vehicles": [
+      {
+        "name": "Swift Dezire",
+        "image": "https://images.unsplash.com/photo-1623869675781-80aa31012c5a?w=600&q=80",
+        "seats": "4 + 1 Driver",
+        "ac": true,
+        "carrier": false,
+        "tollIncluded": true,
+        "driverAllowance": "INCLUSIVE",
+        "description": "Perfect for small families and couples. Comfortable sedan with AC for city rides and short trips."
+      },
+      {
+        "name": "Innova Crysta",
+        "image": "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=600&q=80",
+        "seats": "6 + 1 Driver",
+        "ac": true,
+        "carrier": true,
+        "tollIncluded": true,
+        "driverAllowance": "INCLUSIVE",
+        "description": "Spacious premium SUV ideal for families and groups. Extra luggage space with roof carrier available."
+      },
+      {
+        "name": "Ertiga/Rumion",
+        "image": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&q=80",
+        "seats": "6 + 1 Driver",
+        "ac": true,
+        "carrier": true,
+        "tollIncluded": true,
+        "driverAllowance": "INCLUSIVE",
+        "description": "Versatile MPV perfect for medium-sized groups. Comfortable seating with ample legroom."
+      },
+      {
+        "name": "Scorpio",
+        "image": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&q=80",
+        "seats": "6 + 1 Driver",
+        "ac": true,
+        "carrier": true,
+        "tollIncluded": true,
+        "driverAllowance": "INCLUSIVE",
+        "description": "Rugged and powerful SUV for long-distance travel. Ideal for outstation trips."
+      },
+      {
+        "name": "Skoda Slavia",
+        "image": "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?w=600&q=80",
+        "seats": "4 + 1 Driver",
+        "ac": true,
+        "carrier": false,
+        "tollIncluded": true,
+        "driverAllowance": "INCLUSIVE",
+        "description": "Premium sedan with European styling. Smooth ride quality and refined interiors."
+      },
+      {
+        "name": "Hyundai Verna",
+        "image": "https://images.unsplash.com/photo-1606611013016-969c19ba27a5?w=600&q=80",
+        "seats": "4 + 1 Driver",
+        "ac": true,
+        "carrier": false,
+        "tollIncluded": true,
+        "driverAllowance": "INCLUSIVE",
+        "description": "Stylish and feature-rich sedan. Great for business trips and premium city travel."
+      }
+    ]
+  },
   "pricing": {
-    "local": {
-      "title": "Local Rates (Within Gaya/Bodhgaya)",
-      "headers": ["Vehicle", "4 Hr / 40 KM", "8 Hr / 80 KM", "10 Hr / 100 KM", "Extra KM", "Extra Hr"],
+    "heading": "Check Our Taxi Service Rates",
+    "subheading": "Best Taxi service in Bodhgaya. Book cabs at just Rs.2250.",
+    "vehicleRates": [
+      {
+        "vehicle": "Maruti Dzire (4+1)",
+        "local": {
+          "4hr40km": "Rs.1500/-",
+          "8hr60km": "Rs.2100/-",
+          "10hr80km": "Rs.2400/-",
+          "meterCharge": "12/KM",
+          "extraHrCharge": "200/Hr"
+        },
+        "outstation": {
+          "extraMeter": "12/KM",
+          "minChargesDay": "250KM",
+          "driverNightHalt": "350/-"
+        }
+      },
+      {
+        "vehicle": "Maruti Ertiga (6+1)",
+        "local": {
+          "4hr40km": "Rs.1800/-",
+          "8hr60km": "Rs.2500/-",
+          "10hr80km": "Rs.2800/-",
+          "meterCharge": "17/KM",
+          "extraHrCharge": "200/Hr"
+        },
+        "outstation": {
+          "extraMeter": "17/KM",
+          "minChargesDay": "250KM",
+          "driverNightHalt": "350/-"
+        }
+      },
+      {
+        "vehicle": "Innova Crysta (7+1)",
+        "local": {
+          "4hr40km": "Rs.2500/-",
+          "8hr60km": "Rs.3500/-",
+          "10hr80km": "Rs.4000/-",
+          "meterCharge": "20/KM",
+          "extraHrCharge": "250/Hr"
+        },
+        "outstation": {
+          "extraMeter": "20/KM",
+          "minChargesDay": "250KM",
+          "driverNightHalt": "350/-"
+        }
+      },
+      {
+        "vehicle": "Scorpio (6+1)",
+        "local": {
+          "4hr40km": "Rs.2000/-",
+          "8hr60km": "Rs.2500/-",
+          "10hr80km": "Rs.3000/-",
+          "meterCharge": "17/KM",
+          "extraHrCharge": "200/Hr"
+        },
+        "outstation": {
+          "extraMeter": "17/KM",
+          "minChargesDay": "250KM",
+          "driverNightHalt": "300/-"
+        }
+      },
+      {
+        "vehicle": "Skoda Slavia (4+1)",
+        "local": {
+          "4hr40km": "Rs.3000/-",
+          "8hr60km": "Rs.3500/-",
+          "10hr80km": "Rs.4000/-",
+          "meterCharge": "18/KM",
+          "extraHrCharge": "250/Hr"
+        },
+        "outstation": {
+          "extraMeter": "18/KM",
+          "minChargesDay": "250KM",
+          "driverNightHalt": "350/-"
+        }
+      },
+      {
+        "vehicle": "Hyundai Verna (4+1)",
+        "local": {
+          "4hr40km": "Rs.3000/-",
+          "8hr60km": "Rs.3500/-",
+          "10hr80km": "Rs.4000/-",
+          "meterCharge": "18/KM",
+          "extraHrCharge": "250/Hr"
+        },
+        "outstation": {
+          "extraMeter": "18/KM",
+          "minChargesDay": "250KM",
+          "driverNightHalt": "350/-"
+        }
+      }
+    ],
+    "routeFares": {
+      "title": "Taxi Fare At Bodhgaya Travels",
+      "headers": ["S NO", "SIGHT SEEN", "ETIOS & DEZIRE", "INOVA", "INOVA CRYSTA"],
       "rows": [
-        ["Swift Dezire", "₹1,200", "₹1,800", "₹2,200", "₹12/km", "₹150/hr"],
-        ["Innova Crysta", "₹2,000", "₹3,000", "₹3,500", "₹18/km", "₹200/hr"],
-        ["Ertiga / Rumion", "₹1,500", "₹2,200", "₹2,700", "₹14/km", "₹180/hr"],
-        ["Scorpio", "₹1,800", "₹2,800", "₹3,200", "₹16/km", "₹200/hr"],
-        ["Skoda Slavia", "₹1,500", "₹2,200", "₹2,700", "₹14/km", "₹180/hr"],
-        ["Hyundai Verna", "₹1,500", "₹2,200", "₹2,700", "₹14/km", "₹180/hr"]
-      ]
-    },
-    "outstation": {
-      "title": "Outside Gaya Rates (Outstation)",
-      "headers": ["Vehicle", "Per KM Rate", "Min KM/Day", "Driver Allowance", "Night Halt"],
-      "rows": [
-        ["Swift Dezire", "₹12/km", "250 KM", "Included", "₹300/night"],
-        ["Innova Crysta", "₹18/km", "250 KM", "Included", "₹400/night"],
-        ["Ertiga / Rumion", "₹14/km", "250 KM", "Included", "₹350/night"],
-        ["Scorpio", "₹16/km", "250 KM", "Included", "₹400/night"],
-        ["Skoda Slavia", "₹14/km", "250 KM", "Included", "₹350/night"],
-        ["Hyundai Verna", "₹14/km", "250 KM", "Included", "₹350/night"]
-      ]
-    },
-    "routes": {
-      "title": "Popular Route Fares",
-      "headers": ["Route", "Swift Dezire", "Innova Crysta", "Ertiga / Scorpio"],
-      "rows": [
-        ["Gaya Airport Pickup/Drop", "₹800", "₹1,200", "₹1,000"],
-        ["Gaya Junction Pickup/Drop", "₹600", "₹1,000", "₹800"],
-        ["Bodhgaya → Patna (One Way)", "₹3,000", "₹4,500", "₹3,500"],
-        ["Bodhgaya → Rajgir", "₹2,000", "₹3,500", "₹2,800"],
-        ["Bodhgaya → Nalanda", "₹2,200", "₹3,800", "₹3,000"],
-        ["Bodhgaya → Varanasi", "₹4,500", "₹7,000", "₹5,500"],
-        ["Bodhgaya → Deoghar", "₹5,000", "₹8,000", "₹6,500"],
-        ["Bodhgaya → Ranchi", "₹6,000", "₹9,500", "₹7,500"]
+        ["1.", "Gaya Airport Pickup & Drop", "₹1000", "₹1300", "₹1500"],
+        ["2.", "Gaya junction Pickup & Drop", "₹1200", "₹1500", "₹1700"],
+        ["3.", "Patna Airport pickup & Drop", "₹3500", "₹4500", "₹5500"],
+        ["4.", "Rajgir nalanda same day trip", "₹3500", "₹4500", "₹5500"],
+        ["5.", "4 Hours 40 KM Travel in Local City", "₹1500", "₹2300", "₹2700"],
+        ["6.", "8 Hours 80 KM Travel in Local City", "₹2250", "₹3000", "₹3700"],
+        ["7.", "Extra KM", "13", "18", "20"],
+        ["8.", "Extra Hours", "150", "200", "200"],
+        ["9.", "Deoghar Pickup & Drop", "₹6500", "₹10000", "₹12000"],
+        ["10.", "Varanasi Pickup & Drop", "₹6500", "₹10000", "₹11000"],
+        ["11.", "Ranchi Pickup & Drop", "₹6500", "₹10000", "₹11000"],
+        ["12.", "Outstation Minimum Bill 250 KM", "13", "18", "20"],
+        ["13.", "Driver Night Charge After 9 pm", "₹300", "₹500", "₹500"]
       ]
     }
   },
-  "whyChooseUs": [
-    {
-      "icon": "Wallet",
-      "title": "Pay To Driver",
-      "description": "No advance payment needed. Pay directly to the driver after your trip is completed. Simple and transparent."
-    },
-    {
-      "icon": "ShieldCheck",
-      "title": "No Hidden Fees",
-      "description": "What you see is what you pay. All charges including toll, parking, and driver allowance are clearly mentioned upfront."
-    },
-    {
-      "icon": "Heart",
-      "title": "Trust & Safety",
-      "description": "All our drivers are verified professionals with years of experience. Well-maintained vehicles with regular servicing and insurance."
-    }
-  ],
+  "whyChooseUs": {
+    "heading": "Why Choose Us .?",
+    "subheading": "Enjoy clean cars, professional drivers and smooth travel—every time you book with us.",
+    "cards": [
+      {
+        "icon": "Wallet",
+        "title": "Pay To Driver",
+        "description": "Pay 20% Now & Rest to Driver or Pay Full Amount Online"
+      },
+      {
+        "icon": "ShieldCheck",
+        "title": "No Hidden Fees",
+        "description": "Inclusive of GST, State Taxes and Toll Taxes"
+      },
+      {
+        "icon": "Heart",
+        "title": "Trust & Safety",
+        "description": "Our company takes care of your safety from end to end"
+      }
+    ]
+  },
   "stats": [
     { "value": 4821, "suffix": "+", "label": "Satisfied Clients" },
     { "value": 700, "suffix": "+", "label": "Tour Packages" },
     { "value": 5, "suffix": "+", "label": "Team Members" },
     { "value": 25, "suffix": "+", "label": "Taxi Cars" }
   ],
-  "testimonials": [
-    {
-      "name": "Pritham Sinha",
-      "location": "Bodhgaya",
-      "rating": 5,
-      "quote": "Excellent service! I booked a cab from Bodhgaya to Patna and the experience was wonderful. The driver was very professional and the car was clean and well-maintained. Highly recommend Royal Tour & Travels for anyone visiting Bodhgaya."
-    },
-    {
-      "name": "Akhlesh Yadav",
-      "location": "Gaya",
-      "rating": 5,
-      "quote": "Best taxi service in Bodhgaya! I have been using their service for the past 2 years and they have never disappointed me. The rates are very reasonable and the drivers are always on time. Great experience every time."
-    },
-    {
-      "name": "Rahul Jatwa",
-      "location": "Bihar",
-      "rating": 5,
-      "quote": "I used Royal Tour & Travels for my family trip to Rajgir and Nalanda. The Innova Crysta was in perfect condition and the driver was very knowledgeable about the tourist spots. Made our trip memorable. Thank you!"
-    }
-  ],
+  "testimonials": {
+    "heading": "What Our Clients Say",
+    "subheading": "if you are looking for a taxi service in bodhgaya then royal tour & travel is a bodhgaya based company. royal tour & travel is one such company where you can fulfill all your taxi needs. we provided all types of taxi service go to bodhgaya",
+    "reviewsHeading": "Trip Reviews",
+    "reviews": [
+      {
+        "name": "Pritham Sinha",
+        "location": "Mumbai, Maharastra",
+        "rating": 5,
+        "title": "Exceptional Service!",
+        "quote": "I recently used Royal Tour & Travels for a trip of Ranchi, and I must say, the expectations. The booking experience was flawless. The process was simple, and the customer support was responsive and helpful. Our driver was punctual, the car was clean and comfortable, and the journey was smooth. I felt safe and well-cared-for throughout the trip. Highly recommend their services to anyone looking for reliable and affordable transportation!"
+      },
+      {
+        "name": "Akhlesh Yadav",
+        "location": "Unnao, UP",
+        "rating": 5,
+        "title": "Professional and Reliable!",
+        "quote": "Royal Tour & Travels exceeded my expectations. The booking experience was flawless. The process was simple, and the customer support was responsive and helpful. Our driver was courteous and knew the best routes to avoid traffic. The car was well-maintained, and the entire journey was stress-free. Will definitely choose them again for my future trips!"
+      },
+      {
+        "name": "Rahul Jatwa",
+        "location": "Jaipur, Rajasthan",
+        "rating": 5,
+        "title": "Best Taxi Service in India!",
+        "quote": "I've tried several taxi services across the country and Royal Tour & Travels stands out as the best. The service was top-notch, from booking to drop-off. The driver was friendly and professional, and the vehicle was in excellent condition. I appreciate the transparency in pricing and the attention to detail. Royal Tour & Travels is now my go-to service for all my travel needs between Bodhgaya and Patna!"
+      }
+    ]
+  },
   "contact": {
-    "address": "Near Mahabodhi Temple, Bodhgaya, Gaya, Bihar - 824231",
-    "phones": ["+91 9661838900", "+91 7544868900"],
+    "address": "Amwan, Near - Marasa Sarovar Premiere Hotel, Bodhgaya, Gaya Ji (Bihar) 824231",
+    "phones": ["+91 86038 51659"],
     "email": "royaltourandtravels.bodhgaya@gmail.com",
-    "whatsappLink": "https://wa.me/919661838900?text=Hi%2C%20I%20want%20to%20book%20a%20taxi",
-    "mapLink": "https://www.google.com/maps/place/Bodhgaya,+Bihar"
+    "whatsappLink": "https://wa.me/918603851659?text=Hi%2C%20I%20want%20to%20book%20a%20taxi",
+    "mapLink": "https://www.google.com/maps/place/Bodhgaya,+Bihar",
+    "description": "Royal Tour & Travels, our newest venture offering seamless, comfortable, and reliable Taxi Service in Bodhgaya."
   },
   "footer": {
-    "copyright": "© 2024 Royal Tour & Travels Bodhgaya. All Rights Reserved.",
-    "tagline": "Your Trusted Travel Partner in Bodhgaya",
+    "copyright": "Copyright © 2026 Royal Tour & Travels - Best Taxi Service In Bodhgaya. Book Your Taxi, Book A Taxi In Bodhgaya",
+    "tagline": "Experience a redefined journey connecting these two iconic cities with us.",
     "links": [
-      { "label": "Terms & Conditions", "href": "/terms" },
-      { "label": "Privacy Policy", "href": "/privacy" }
+      { "label": "Home", "href": "/" },
+      { "label": "Term & Condition", "href": "/terms" },
+      { "label": "Privacy Policy", "href": "/privacy" },
+      { "label": "Contact", "href": "/contact" }
     ]
   },
   "termsAndConditions": {
-    "title": "Terms & Conditions",
-    "lastUpdated": "2024",
+    "title": "Term and condition",
+    "lastUpdated": "2026",
     "sections": [
       {
-        "title": "Booking and Payment",
-        "content": "All bookings are subject to availability. Bookings can be made via phone call, WhatsApp, or through our website. Payment is to be made directly to the driver upon completion of the trip unless otherwise agreed. We accept cash payments. Rates quoted are subject to change without prior notice."
+        "title": "1. Booking and Payment",
+        "content": "The customer shall pay the cab rental fare as per the rates and payment schedules mentioned at the time of booking.\n\nA valid ID card is required for booking. A token amount may be required to confirm your booking."
       },
       {
-        "title": "Service Use",
-        "content": "Our services are intended for lawful purposes only. The customer is responsible for providing accurate pickup and drop locations. Any damage caused to the vehicle by the customer will be charged accordingly. Smoking and consumption of alcohol inside the vehicle is strictly prohibited."
+        "title": "2. Service Use",
+        "content": "The customer agrees that using services provided by Royal Tour & Travels is at their sole risk. Royal Tour & Travels disclaims all warranties, whether express or implied, regarding the condition, quality, or fitness of services.\n\nRoyal Tour & Travels will not be liable for any loss or damage arising from the use of the cab service, including but not limited to delays, non-availability of cabs, or any system failures."
       },
       {
-        "title": "Liability",
-        "content": "Royal Tour & Travels shall not be held liable for any delays caused due to traffic, road conditions, weather, or any other circumstances beyond our control. We are not responsible for any loss or damage to personal belongings left in the vehicle. Our liability is limited to the fare paid for the trip."
+        "title": "3. Liability",
+        "content": "Royal Tour & Travels shall not be responsible for any loss or damage suffered by the customer due to failure to provide services or any reason beyond its control.\n\nCustomers are advised to take full responsibility for their luggage and belongings. Royal Tour & Travels will not be liable for any loss or damage to personal items."
       },
       {
-        "title": "Cancellation and Refund Policy",
-        "content": "Cancellations made 24 hours before the scheduled trip: No charge. Cancellations made 12-24 hours before: 25% of the total fare will be charged. Cancellations made 6-12 hours before: 50% of the total fare will be charged. Cancellations made less than 6 hours before or no-show: Full fare will be charged. Refunds, if applicable, will be processed within 7 working days."
+        "title": "4. Cancellation and Refund Policy",
+        "content": "Cancellations can be made by calling the official contact number of Royal Tour & Travels.\n\nCancellation charges apply as follows:\n• Within 6 hours of scheduled journey: 100% of the booking amount (Maximum Rs. 2500)\n• Between 6 to 24 hours of scheduled journey: 50% of the booking amount (Maximum Rs. 1000)\n• Before 24 hours of scheduled journey: Rs. 500 from the booking amount\n\nIf the booking is made without inquiring about trip charges, Rs. 250 will be deducted as a cancellation charge.\n\nRefunds will be processed within 10-12 working days through the same online payment mode."
       },
       {
-        "title": "Additional Charges",
-        "content": "Toll charges, parking fees, and state permit charges (if applicable) are to be borne by the customer unless included in the package. Night driving charges may apply for trips between 10:00 PM and 6:00 AM. Waiting charges of ₹100 per hour will be applied after 30 minutes of free waiting time."
+        "title": "5. Additional Charges",
+        "content": "Taxi Waiting Charges: Rs. 200 per hour for waiting beyond 30 minutes of the scheduled departure.\n\nMultiple Pick-ups: Rs. 200 per additional pick-up.\n\nRate Variations: Rates may vary on holidays and festivals.\n\nHighway Preference: Extra fare applies if a specific expressway or route is preferred.\n\nParking Charges: Not included in the standard fare and will be billed separately.\n\nAirport Pick-up/Drop: Fares apply specifically to airport locations; different locations may incur extra charges."
       },
       {
-        "title": "Modifications",
-        "content": "We reserve the right to modify these terms and conditions at any time without prior notice. Changes will be effective immediately upon posting on our website. Continued use of our services after modifications constitutes acceptance of the updated terms."
+        "title": "6. Modifications",
+        "content": "Royal Tour & Travels reserves the right to modify these terms and conditions without prior notice. Customers are advised to review the terms regularly."
       },
       {
-        "title": "Dispute Resolution",
-        "content": "Any disputes arising from the use of our services shall be resolved amicably through mutual discussion. If a resolution cannot be reached, the matter shall be subject to the jurisdiction of courts in Gaya, Bihar."
+        "title": "7. Dispute Resolution",
+        "content": "Any disputes will be referred to an arbitrator appointed by Royal Tour & Travels under the Arbitration and Conciliation Act, 1996. The courts of the service provider's location will have exclusive jurisdiction over any matters arising from the use of services."
       },
       {
-        "title": "Communication",
-        "content": "By using our services, you consent to receive communications from us regarding your bookings, promotional offers, and service updates via phone calls, SMS, WhatsApp, and email. You can opt out of promotional communications at any time by contacting us."
+        "title": "8. Communication",
+        "content": "By using our services, you consent to receive booking confirmations, itinerary details, and other service-related communications via SMS or voice call.\n\nBy using our services, you acknowledge and agree to these terms and conditions."
       }
     ]
   },
   "privacyPolicy": {
     "title": "Privacy Policy",
-    "lastUpdated": "2024",
+    "lastUpdated": "2026",
     "sections": [
       {
         "title": "Consent",
-        "content": "By using our website and services, you hereby consent to our Privacy Policy and agree to its terms. Your continued use of the site following the posting of changes to this policy will be deemed your acceptance of those changes."
+        "content": "By using our website, you hereby consent to our Privacy Policy and agree to its terms."
       },
       {
         "title": "Information We Collect",
-        "content": "We collect personal information that you voluntarily provide to us when you use our services, including: your name, phone number, email address, pickup and drop locations, travel dates and preferences. We may also collect device information, browser type, and IP address when you visit our website."
+        "content": "The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.\n\nIf you contact us directly, we may receive additional information about you, such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.\n\nWhen you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number."
       },
       {
         "title": "How We Use Your Information",
-        "content": "We use the information we collect to: process and manage your taxi bookings, communicate with you about your trips and provide customer support, send promotional offers and service updates (with your consent), improve our services and website experience, comply with legal obligations."
+        "content": "We use the information we collect in various ways, including to:\n\n- Provide, operate, and maintain our website\n- Improve, personalize, and expand our website\n- Understand and analyze how you use our website\n- Develop new products, services, features, and functionality\n- Communicate with you, either directly or through one of our partners, including for customer service, to provide with updates and other information relating to the website, and for marketing and promotional purposes\n- Send you emails\n- Find and prevent fraud"
       },
       {
         "title": "Log Files",
-        "content": "Royal Tour & Travels follows a standard procedure of using log files. These files log visitors when they visit websites. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable."
+        "content": "Royal Tour & Travels follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this as part of hosting services' analytics. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information."
       },
       {
         "title": "Advertising Partners Privacy Policies",
-        "content": "Third-party ad servers or ad networks may use technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Royal Tour & Travels, which are sent directly to users' browsers. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites."
+        "content": "You may consult this list to find the Privacy Policy for each of the advertising partners of Royal Tour & Travels.\n\nThird-party ad servers or ad networks use technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Royal Tour & Travels, which are sent directly to users' browsers. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.\n\nNote that Royal Tour & Travels has no access to or control over these cookies that are used by third-party advertisers."
       },
       {
         "title": "Third Party Privacy Policies",
-        "content": "Royal Tour & Travels' Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options."
+        "content": "Royal Tour & Travels's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.\n\nYou can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites."
       },
       {
-        "title": "CCPA Privacy Rights",
-        "content": "Under the CCPA, among other rights, California consumers have the right to: request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data collected, request that a business delete any personal data collected, request that a business that sells a consumer's personal data not sell the consumer's personal data."
+        "title": "CCPA Privacy Rights (Do Not Sell My Personal Information)",
+        "content": "Under the CCPA, among other rights, California consumers have the right to:\n\n- Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.\n- Request that a business delete any personal data about the consumer that a business has collected.\n- Request that a business that sells a consumer's personal data, not sell the consumer's personal data.\n\nIf you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us."
       },
       {
         "title": "GDPR Data Protection Rights",
-        "content": "We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following: The right to access, The right to rectification, The right to erasure, The right to restrict processing, The right to object to processing, The right to data portability. If you make a request, we have one month to respond to you."
+        "content": "We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:\n\n- The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.\n- The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.\n- The right to erasure – You have the right to request that we erase your personal data, under certain conditions.\n- The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.\n- The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.\n- The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.\n\nIf you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us."
       },
       {
         "title": "Children's Information",
-        "content": "Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity. Royal Tour & Travels does not knowingly collect any Personal Identifiable Information from children under the age of 13."
+        "content": "Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.\n\nRoyal Tour & Travels does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records."
       },
       {
         "title": "Changes to This Privacy Policy",
-        "content": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. Changes are effective immediately after they are posted on this page."
+        "content": "We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page."
       },
       {
         "title": "Contact Us",
-        "content": "If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at royaltourandtravels.bodhgaya@gmail.com or call us at +91 9661838900."
+        "content": "If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us."
       }
     ]
   }

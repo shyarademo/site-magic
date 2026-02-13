@@ -21,7 +21,7 @@ const Footer = ({ data }: Props) => {
                 {branding.companyName}
               </span>
             </div>
-            <p className="text-sm text-secondary-foreground/60 font-sans">
+            <p className="text-sm text-secondary-foreground/60 font-sans italic">
               {footer.tagline}
             </p>
           </div>
@@ -30,11 +30,7 @@ const Footer = ({ data }: Props) => {
             <h4 className="mb-3 font-bold text-secondary-foreground font-sans">Quick Links</h4>
             <div className="space-y-2">
               {footer.links.map((link) => (
-                <Link
-                  key={link.label}
-                  to={link.href}
-                  className="block text-sm text-secondary-foreground/60 font-sans hover:text-primary"
-                >
+                <Link key={link.label} to={link.href} className="block text-sm text-secondary-foreground/60 font-sans hover:text-primary">
                   {link.label}
                 </Link>
               ))}

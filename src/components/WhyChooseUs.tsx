@@ -11,33 +11,36 @@ interface Props {
 }
 
 const WhyChooseUs = ({ data }: Props) => {
+  const { whyChooseUs } = data;
+
   return (
     <section className="bg-secondary py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
           className="mb-14 text-center"
         >
-          <span className="mb-2 inline-block text-sm font-semibold uppercase tracking-wider text-primary font-sans">
-            Why Us
-          </span>
           <h2 className="text-3xl font-bold text-secondary-foreground sm:text-4xl">
-            Why Choose Us
+            {whyChooseUs.heading}
           </h2>
+          <p className="mt-4 text-secondary-foreground/70 font-sans max-w-2xl mx-auto">
+            {whyChooseUs.subheading}
+          </p>
         </motion.div>
 
         <div className="grid gap-8 md:grid-cols-3">
-          {data.whyChooseUs.map((item, i) => {
+          {whyChooseUs.cards.map((item, i) => {
             const Icon = iconMap[item.icon] || Wallet;
             return (
               <motion.div
                 key={item.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.15 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ delay: i * 0.15, duration: 0.5 }}
                 className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm"
               >
                 <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full gold-gradient">
